@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>basic 01 - 상세페이지</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <style>
+        .t_b {
+            color: #0d6efd;
+        }
+
+        .container {
+            display: flex;
+            width: 1170px;
+            margin: 0 auto;
+            gap: 30px;
+        }
+
+        .inner {
+            width: 1170px;
+            margin: 0 auto;
+        }
+
+        .about {
+            padding: 100px 0;
+            letter-spacing: -0.025em;
+            font-size: 15px;
+        }
+
+        .about img {
+            width: 100%;
+        }
+
+        .about h2 {
+            font-size: 30px;
+            font-weight: 700;
+            text-align: center;
+        }
+
+        .about h2::after {
+            content: "";
+            display: block;
+            width: 30px;
+            height: 3px;
+            background: #0d6efd;
+            margin: 15px auto;
+        }
+
+        .about>p {
+            margin-bottom: 50px;
+            font-weight: 300;
+            text-align: center;
+        }
+
+        .about .container {
+            margin: 0 auto 100px auto;
+            justify-content: space-between;
+        }
+
+        .about .tit {
+            font-size: 25px;
+            font-weight: 500;
+            margin-bottom: 50px;
+            line-height: 1.45;
+        }
+
+        .about .container p {
+            line-height: 1.45;
+            margin-bottom: 30px;
+        }
+
+        .about figure {
+            height: 400px;
+            overflow: hidden;
+        }
+
+        .about h3 {
+            position: relative;
+            /* before을 주면 뜨니까 */
+            font-size: 23px;
+            font-weight: 500;
+            padding-left: 10px;
+            margin-bottom: 30px;
+        }
+
+        .about h3::before {
+            content: "";
+            position: absolute;
+            top: 2px;
+            left: 0;
+            width: 3px;
+            height: 20px;
+            background: #0d6efd;
+        }
+
+        table {
+            width: 100%;
+            border: 1px solid #333;
+            border-collapse: collapse;
+            border-spacing: 0;
+        }
+
+        table td {
+            padding: 15px 15px;
+            border-left: 1px solid #333;
+        }
+
+        table th {
+            padding: 15px 15px;
+            text-align: left;
+            background: #f7f7f7;
+            font-weight: 400;
+        }
+
+        table tr {
+            border-bottom: 1px solid #ddd;
+        }
+
+        table th,
+        table td {
+            border: 1px solid #ddd;
+            padding: 15px;
+        }
+
+        table th {
+            width: 200px;
+            border-bottom: 1px solid #333;
+        }
+
+        .responsive_table {
+            width: 100%;
+            overflow-x: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <section class="about">
+        <h2>
+            <span class="t_b">CEO'S</span> GREETIONGS
+        </h2>
+        <p>
+            새로운 미래를 열어가는 우투더영투더우
+        </p>
+        <div class="container">
+            <div class="des">
+                <p class="tit">
+                    웹서비스의<span class="t_b">새로운 미래를</span><br />
+                    <span class="t_b">우투더영투더우</span>이 만들어 가겠습니다.
+                </p>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.<br />Voluptas est saepe ducimus
+                    repellendus repudiandae totam quisquam fugit tempore expedita excepturi.
+                </p>
+
+                <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.<br />
+                    Iste debitis voluptas ex. Asperiores, id eius. Blanditiis, temporibus dolorum veritatis atque<br />
+                    necessitatibus ducimus deserunt corrupti? Commodi!
+                </p>
+
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.<br />
+                    Assumenda ipsum expedita distinctio facere
+                    molestias placeat.
+                </p>
+
+                <p>우투더영투더우 임직원 일동</p>
+            </div>
+            <figure>
+                <img src="./img/hd03.jpg" alt="">
+            </figure>
+        </div>
+        <div class="inner">
+            <h3>주요현황</h3>
+            <div class="responsive_table">
+                <table class="table">
+                    <tbody>
+                        <tr>
+                            <th>주 소</th>
+                            <td>부산시 동래구 사직동 1234-56 쌍둥이 돼지국밥 옆</td>
+                        </tr>
+                        <tr>
+                            <th>전화번호</th>
+                            <td>051-783-2371</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+
+        </div>
+    </section>
+
+</body>
+
+</html>
