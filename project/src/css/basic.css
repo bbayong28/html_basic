@@ -47,10 +47,46 @@
     margin: 0 auto;
     gap: 30px;
 }
-/* .container>*{
-    flex: 1;
+.basicSection .tit {
+    font-size: 25px;
+    font-weight: 500;
+    margin-bottom: 50px;
+    line-height: 1.45;
 }
- */
+
+.basicSection .container p {
+    line-height: 1.45;
+    margin-bottom: 30px;
+}
+
+.basicSection .inner p {
+    line-height: 1.45;
+    margin-bottom: 30px;
+}
+
+.basicSection h3 {
+    position: relative;
+    /* before을 주면 뜨니까 */
+    font-size: 23px;
+    font-weight: 500;
+    padding-left: 10px;
+    margin-bottom: 30px;
+}
+
+.basicSection h3::before {
+    content: "";
+    position: absolute;
+    top: 2px;
+    left: 0;
+    width: 3px;
+    height: 20px;
+    background: var(--mc);
+}
+
+.basicSection .pd15{
+    padding: 0 15px;
+}
+
 .inner {
     max-width: 1200px;
     margin: 0 auto;
@@ -78,6 +114,7 @@
     height: 2px;
     background: var(--mc);
 }
+
 .table {
     /* width: 100%; */
     width: 1170px;
@@ -103,7 +140,7 @@
 }
 
 .table caption{
-    text-align: center;
+    text-align: right;
     caption-side: bottom;
     margin: 10px 0 0 0;
 }

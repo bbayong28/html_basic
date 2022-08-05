@@ -32,7 +32,7 @@ const Section01 = () => {
                 <img src="./img/hd03.jpg" alt=""></img>
             </figure>
         </div>
-        <div className="inner">
+        <div className="inner pd15">
             <h3>주요현황</h3>
             <div className="responsive_table">
                 <table className="table">
